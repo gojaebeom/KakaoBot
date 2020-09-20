@@ -25,4 +25,5 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
     
     
     replier.reply(File.getSdcardPath());
+    replier.reply(File.getSdcardPath());
 }

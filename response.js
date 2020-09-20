@@ -86,3 +86,19 @@ function Enhance(newPoint, replier)
     }
         
 }
+
+function save(path, fileName, content)
+{
+    const folder = new java.io.File(path);
+    folder.mkdirs();
+
+    const file = new java.io.File(path + fileName);
+
+    const fos = new java.io.FileOutputStream(file);
+
+    const contentString = new java.lang.String(content);
+
+    fos.write(contentString.getBytes());
+
+    fos.close();
+}
