@@ -65,6 +65,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
     }
     /* -------------------Bot Study end-------------------- */
 
+    
 
 
     /* -------------study messege Response----------------- */
