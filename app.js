@@ -15,14 +15,14 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
     /* -------------------Default Skill-------------------- */
     if(msg === '안녕' || msg === '안뇽' || msg === '안녕하세요' || msg === 'ㅎㅇ' || msg === 'ㅎ2' || msg === 'ㅎe')
         replier.reply('안녕하세요 '+sender+'님🖐');
-    if(msg === '@안녕봇')
+    if(msg.indexOf("@정보") !== -1)
         replier.reply(
             '---Bot Property---\n'+
             '이름 : '+HelloBot.name+'\n'+
             '탄생일 : '+HelloBot.birth+'\n'+
             '취미 : '+HelloBot.hobby+'\n'
             );
-    if(msg === '@명령어')
+    if(msg.indexOf('@명령어') !== -1)
         replier.reply(
             '---Bot commandLine---\n'+
             '1. 인사 관련 언어에 반응\n'+
